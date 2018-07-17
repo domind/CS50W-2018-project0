@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Basics of HTML, CSS from CS50</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="container" >
+			<div id="title" class="row" >
+				<div id="top" class="col">
+					<h1>Basics of HTML, CSS from CS50</h1>
+					<h2>Website for Project 0</h2>
+				</div>
+			</div>
+
+			<div class="row">
+				<div id="menu" class="col" >
+					<br>
+					<ul>
+						<li><a href="index.html">HTML</a> </li>
+						<li><a href="css.html">CSS</a> </li>
+						<li><a href="scss.html">SCSS</a> </li>
+						<li><a href="bootstrap.html">Bootstrap</a> </li>
+					</ul>
+				</div>
+				<div id="main" class="col-10" >
+					<div id="title2" class="row" >
+						<div  class="col" >
+							<h1>Bootstrap</h1>
+						</div>
+	
+					</div>
+					<div id="main-content" class="row" >
+						<div  class="col" >
+							<p>
+Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery. 
+<br>
+<br>
+When you only need to include Bootstrap's compiled CSS or JS, you can use <a href="https://www.bootstrapcdn.com/">BootstrapCDN</a>.<br>
+Simly insert below code into head of your html file <br><code class="codespan">&lt;link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous"&gt;</code>
+							</p>
+
+
+							<h3 class="h3title">Containers</h3>
+							<p>
+Containers are the most basic layout element in Bootstrap and are required when using our default grid system. Choose from a responsive, fixed-width container (meaning its max-width changes at each breakpoint) or fluid-width (meaning it's 100% wide all the time).
+While containers can be nested, most layouts do not require a nested container.<br>
+							</p>
+
+							<div class="container" style="width:70%;">
+								<div class="row">
+									<div class="col">
+										<code class="codespan">
+										&lt;div class="container"&gt; <br>
+										&emsp; &lt;!-- Content here --&gt;<br>
+										&lt;/div&gt;<br>
+										</code>
+									</div>
+									<div class="col" style="background-color: PaleGreen;">
+
+									</div>
+
+								</div>
+							</div>
+
+<br>
+<p>
+Use .container-fluid for a full width container, spanning the entire width of the viewport.</p>
+<div class="container-fluid" style="background-color:PaleGreen ;">
+ <code class="codespan">
+										&lt;div class="container-fluid"&gt; <br>
+										&emsp; &lt;!-- Content here --&gt;<br>
+										&lt;/div&gt;<br>
+										</code>
+</div>
+<br>
+<h3 class="h3title">Grid system</h3>
+<p>
+Bootstrap's grid system uses a series of containers, rows, and columns to layout and align content. It's built with flexbox and is fully responsive. Below is an example and an in-depth look at how the grid comes together.
+</p>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      One of three columns
+    </div>
+    <div class="col-sm">
+      One of three columns
+    </div>
+    <div class="col-sm">
+      One of three columns
+    </div>
+  </div>
+ <div class="row">
+<div class="col">
+<code class="codespan">
+&lt;div class="container"&gt;<br>
+&emsp;&emsp;&lt;div class="row"&gt;<br>
+&emsp;&emsp;&emsp;&emsp;&lt;div class="col-sm"&gt;<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;One of three columns<br>
+&emsp;&emsp;&emsp;&emsp;&lt;/div&gt;<br>
+&emsp;&emsp;&emsp;&emsp;&lt;div class="col-sm"&gt;<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;One of three columns<br>
+&emsp;&emsp;&emsp;&emsp;&lt;/div&gt;<br>
+&emsp;&emsp;&emsp;&emsp;&lt;div class="col-sm"&gt;<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;One of three columns<br>
+&emsp;&emsp;&emsp;&emsp;&lt;/div&gt;<br>
+&emsp;&emsp;&lt;/div&gt;<br>
+&lt;/div&gt;<br>
+</code>
+</div>
+  </div>
+</div>
+
+
+
+
+<Br><br><br>
+
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<div class="container" style="background-color: purple; ">
+  <!-- Content here -->
+<p >
+<Br>test<br><br></p>
+</div>
+
+	</body>
+</html>

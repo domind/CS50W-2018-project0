@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<div class="container" >
-			<div id="title" class="row" >
+			<div class="row" >
 				<div id="top" class="col">
 					<h1>Basics of HTML, CSS from CS50</h1>
 					<h2>Website for Project 0</h2>
@@ -20,21 +20,21 @@
 				<div id="menu" class="col" >
 					<br>
 					<ul>
-						<li><a href="index.html">HTML</a> </li>
+						<li><a href="html.html">HTML</a> </li>
 						<li><a href="css.html">CSS</a> </li>
 						<li><a href="scss.html">SCSS</a> </li>
 						<li><a href="bootstrap.html">Bootstrap</a> </li>
 					</ul>
 				</div>
-				<div id="main" class="col-10" >
-					<div id="title2" class="row" >
-						<div  class="col" >
+				<div class="col-10" >
+					<div  class="row" >
+						<div  class="col" id="title2">
 							<h1>Bootstrap</h1>
 						</div>
 	
 					</div>
-					<div id="main-content" class="row" >
-						<div  class="col" >
+					<div  class="row" >
+						<div  class="col" id="main-content" >
 							<p>
 Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery. 
 <br>
@@ -81,18 +81,22 @@ Use .container-fluid for a full width container, spanning the entire width of th
 <p>
 Bootstrap's grid system uses a series of containers, rows, and columns to layout and align content. It's built with flexbox and is fully responsive. Below is an example and an in-depth look at how the grid comes together.
 </p>
+<p>
+New to or unfamiliar with flexbox? <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background">Read this CSS Tricks flexbox guide</a> for background, terminology, guidelines, and code snippets.
+</p>
 <div class="container">
   <div class="row">
-    <div class="col-sm">
+    <div class="col-sm" style="border: 5px solid #DDDDDD;">
       One of three columns
     </div>
-    <div class="col-sm">
+    <div class="col-sm" style="border: 5px solid #DDDDDD;">
       One of three columns
     </div>
-    <div class="col-sm">
+    <div class="col-sm" style="border: 5px solid #DDDDDD;">
       One of three columns
     </div>
   </div>
+<br>
  <div class="row">
 <div class="col">
 <code class="codespan">
@@ -110,7 +114,26 @@ Bootstrap's grid system uses a series of containers, rows, and columns to layout
 &emsp;&emsp;&lt;/div&gt;<br>
 &lt;/div&gt;<br>
 </code>
+
 </div>
+<br>
+<p>
+The above example creates three equal-width columns on small, medium, large, and extra large devices using our predefined grid classes. Those columns are centered in the page with the parent .container.<br>
+<ul>Breaking it down, here's how it works:
+<li>Containers provide a means to center and horizontally pad your site's contents. Use .container for a responsive pixel width or .container-fluid for width: 100% across all viewport and device sizes.</li>
+<li>Rows are wrappers for columns. Each column has horizontal padding (called a gutter) for controlling the space between them. This padding is then counteracted on the rows with negative margins. This way, all the content in your columns is visually aligned down the left side.</li>
+<li>In a grid layout, content must be placed within columns and only columns may be immediate children of rows.</li>
+<li>Thanks to flexbox, grid columns without a specified width will automatically layout as equal width columns. For example, four instances of .col-sm will each automatically be 25% wide from the small breakpoint and up. See the auto-layout columns section for more examples.</li>
+<li>Column classes indicate the number of columns you'd like to use out of the possible 12 per row. So, if you want three equal-width columns across, you can use .col-4.</li>
+<li>Column widths are set in percentages, so they're always fluid and sized relative to their parent element.</li>
+<li>Columns have horizontal padding to create the gutters between individual columns, however, you can remove the margin from rows and padding from columns with .no-gutters on the .row.</li>
+<li>To make the grid responsive, there are five grid breakpoints, one for each responsive breakpoint: all breakpoints (extra small), small, medium, large, and extra large.</li>
+<li>Grid breakpoints are based on minimum width media queries, meaning they apply to that one breakpoint and all those above it (e.g., .col-sm-4 applies to small, medium, large, and extra large devices, but not the first xs breakpoint).</li>
+<li>You can use predefined grid classes (like .col-4) or Sass mixins for more semantic markup.</li>
+</ul>
+Be aware of the limitations and bugs around flexbox, like the inability to use some HTML elements as flex containers.
+</p>
+
   </div>
 </div>
 
@@ -126,10 +149,10 @@ Bootstrap's grid system uses a series of containers, rows, and columns to layout
 				</div>
 			</div>
 		</div>
-<div class="container" style="background-color: purple; ">
-  <!-- Content here -->
-<p >
-<Br>test<br><br></p>
+<div class="container" id="bottom">
+<div class="fbottom">
+content copied from <a href="https://www.w3schools.com">www.w3schools.com</a>, <a href="https://getbootstrap.com">getbootstrap.com</a> and <a href="https://sass-lang.com/guide">sass-lang.com</a> 
+</div>
 </div>
 
 	</body>

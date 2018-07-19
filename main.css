@@ -1,0 +1,45 @@
+body{
+margin: 2%;
+}
+.row,.container, #main-section{
+border-style: none;
+border-radius:20px;
+}
+
+.col,.col-md-10, .col-sm-12,.fbottom {
+border-radius:20px;
+border-style: solid;
+border-width: 2px;
+border-color:#DDD;
+}
+
+.backtogit{
+background-color: White;
+display:flex; 
+font-weight: bold;
+align-items: center;
+justify-content:center;
+word-wrap: break-word;
+}
+
+.backtogit:hover{
+background-color: Gainsboro ;
+cursor: pointer;
+}
+
+#top {
+text-align: center;
+background-color:White;
+
+}
+
+#bottom{
+padding:0px;
+}
+.fbottom{
+ background-color:White;
+text-align: center;
+}
+.fbottom a:link, .fbottom a:visited,.fbottom a:focus {
+/* color: YellowGreen ;*/
+}

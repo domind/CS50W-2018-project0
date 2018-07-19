@@ -1,0 +1,142 @@
+﻿---
+---
+
+
+
+$border-main-color: #ddd;
+$background-ls:LightBlue;
+$background-sm:PaleTurquoise;
+$menu-color:OliveDrab;
+$link-hover:GoldenRod;
+$link-color:YellowGreen;
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+  }
+  li {
+    display: inline;
+  }
+  a {
+    display: block;
+    border-radius: 20px;
+    margin-bottom: 2%;
+    text-align: center;
+    line-height: 3;
+    color: black;
+    &:link, &:visited, &:focus {
+      background: $link-color;
+    }
+    &:hover {
+      background: $link-hover;
+    }
+    &:active {
+      background: orange;
+      color: white;
+    }
+  }
+}
+
+body {
+  margin: 2%;
+}
+
+.row, .container, #main-section {
+  border-style: none;
+  border-radius: 20px;
+}
+
+.col, .fbottom, .col-md-10, .col-sm-12 {
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: $border-main-color;
+}
+
+.backtogit {
+  background-color: $link-color;
+  vertical-align: middle;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background-color: $link-hover;
+    cursor: pointer;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid $border-main-color;
+  padding: 8px;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: Khaki;
+}
+
+/*tr:hover {background-color: $border-main-color;}*/
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+#bottom {
+  padding: 0px;
+}
+
+.fbottom {
+@extend .col;
+  background-color: $menu-color;
+  text-align: center;
+  a {
+    &:link, &:visited, &:focus {
+      color: $link-color;
+    }
+  }
+}
+
+#top, #menu {
+  text-align: center;
+  background-color: $menu-color;
+}
+
+#title2 {
+  text-align: center;
+  background-color: DarkKhaki;
+}
+
+#main-content {
+  background-color: LightGoldenRodYellow;
+}
+
+@media print {
+  .screen-only {
+    display: none;
+  }
+}
+
+@media (max-width: 499px) {
+  body {
+    background-color: $background-sm;
+  }
+}
+
+@media (min-width: 500px) {
+  body {
+    background-color: $background-ls;
+  }
+}

@@ -1,87 +1,167 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>domind.github.io</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-		<link rel="stylesheet" href="main.css">
-	</head>
+
+<head>
+	<title>domind.github.io</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+		integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+	<link rel="stylesheet" href="main.css">
+</head>
 
 <body>
-		<div class="container" >
-			<div class="row" >
-<div class="col backtogit" onclick="location.href='index.html';" body style="word-break: break-all;" ><br>domind.github.io<br><br>
-</div>
 
-				<div id="top" class="col-md-10 col-sm-12">
-					<br>
-					<h1>My github</h1>
-					<br>
-
-				</div>
+	<div class="container">
+		<div class="row">
+			<div class="col backtogit" onclick="location.href='index.html';" style="word-break: break-all;">
+				<br>domind.github.io<br><br>
 			</div>
-			<div class="row">
-				<div id="menu" class="col" >
-					<h4>React list with sublists</h4>
-					<p>
-					<a href="/react-list/index.html">React list with sublists</a> <br>
-					
-						<a href="https://github.com/domind/react-list">
-							source code</a> file.
-					<br><a href="/react-list/index.html">Link to created site</a>
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<div id="menu" class="col" >
-					<h4>CS50</h4>
-					<p>
-					<a href="/CS50Project0/html.html">Project 0</a> <br>
-					To design web site that will use various HTML, CSS, SCSS and Bootstrap elements. 
-						More details about requirements in 
-						<a href="https://github.com/domind/domind.github.io/blob/master/README.md">
-							README.md</a> file.
-					<br><a href="/CS50Project0/html.html">Link to created site</a>
-					</p>
-				</div>
-			</div>
-			<div class="row" >
-				<div class="col" >
-<p><a href="https://github.com/domind/space-invaders">Space Invaders</a><br>
-Space Invaders game clone written in C++ with use of SFML library.</p>
-				</div>
-			</div>	
-			<div class="row" >
-				<div class="col" >
-<p><a href="https://github.com/domind/simple-database-editor">Simlpe database editor</a><br>
-Simple C# program to enter/delete records in mariaDB </p>
-				</div>
-				<div class="col" >
-<p><a href="https://github.com/domind/gtk-database">GTK database viewer</a><br>Usage of GTK library for presenting table from database C#</p>
-				</div>
-			</div>	
-			<div class="row" >
-				<div class="col" >
-<p> <a href="https://github.com/domind/Codewars">Codewars submissions.</a> C++, C#, Java, PHP<br>
-My present rank is 3kyu<br>
-<a href="https://www.codewars.com/users/domind/">Link to my profile</a><br>
-<img src="https://www.codewars.com/users/domind/badges/micro"><p>
-				</div>
-			</div>	
-			<div class="row" >
-				<div class="col" >
-<p><a href="https://github.com/domind/dom-mysql">Database editor</a><br>Spring framework program for entering/deleting records in mariaDB</p>
-				</div>
-			</div>	
 
+			<div id="top" class=" col-sm-10">
+				<br>
+				<h1>My github</h1>
+				<br>
 
+			</div>
 		</div>
-<div class="container" id="bottom">
-<div class="fbottom">
- <a href="https://domind.github.com">domind.github.com </a><br>
-Page under construction
-</div>
-</div>
+		<div class="row">
+			<div id="menu" class="col">
+				<h4>React projects</h4>
+				<div class="row ">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10 reactItem">
+						<div class="row ">
+							<div class="col-sm-6">
+								<h5> List with sublists </h5><br>
+
+								<a href="https://github.com/domind/react-list">
+									source code</a>
+								<br><a href="react-list/index.html">Link to created site</a>
+							</div>
+							<div class="col-sm-6">
+								<img onclick="openModal();currentSlide(1)" src="img/react-list.png"
+									alt="react-list screenshot" 
+									style="width:100%;max-width:300px;padding: 10px;">
+							</div>
+						</div>
+
+					</div>
+
+					<div class="col-sm-1"></div>
+				</div>
+				<div class="row ">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10 reactItem">
+						<div class="row">
+							<div class="col-sm-6">
+								<h5>Form creating e-mail file on submit</h5><br>
+								<a href="https://github.com/domind/form-creating-email">
+									source code</a>
+								<br><a href="react-form/index.html">Link to created site</a>
+							</div>
+							<div class="col-sm-6">
+								<img onclick="openModal();currentSlide(2)" src="img/react-form.png"
+								alt="react-form screenshot"
+								 style="height: 100%;max-width:300px;padding: 10px;">
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="menu" class="col">
+				<h4>CS50</h4>
+				<p>
+					<a href="/CS50Project0/html.html">Project 0</a> <br>
+					To design web site that will use various HTML, CSS, SCSS and Bootstrap elements.
+					More details about requirements in
+					<a href="https://github.com/domind/domind.github.io/blob/master/README.md">
+						README.md</a> file.
+					<br><a href="/CS50Project0/html.html">Link to created site</a>
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<p><a href="https://github.com/domind/space-invaders">Space Invaders</a><br>
+					Space Invaders game clone written in C++ with use of SFML library.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<p><a href="https://github.com/domind/simple-database-editor">Simlpe database editor</a><br>
+					Simple C# program to enter/delete records in mariaDB </p>
+			</div>
+			<div class="col">
+				<p><a href="https://github.com/domind/gtk-database">GTK database viewer</a><br>Usage of GTK library for
+					presenting table from database C#</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<p> <a href="https://github.com/domind/Codewars">Codewars submissions.</a> C++, C#, Java, PHP<br>
+					My present rank is 3kyu<br>
+					<a href="https://www.codewars.com/users/domind/">Link to my profile</a><br>
+					<img src="https://www.codewars.com/users/domind/badges/micro">
+					<p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<p><a href="https://github.com/domind/dom-mysql">Database editor</a><br>Spring framework program for
+					entering/deleting records in mariaDB</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container fbottom" id="bottom">
+
+				<p><a href="https://domind.github.com">domind.github.com </a><br />
+					Page under construction</p>
+
+			</div>
+		</div>
+	</div>
+	<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+
+				<div class="mySlides">
+					<img src="img/react-list.png" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<img src="img/react-form.png" style="width:100%; max-height: 5%">
+				</div>
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+			</div>
+		</div>
+	<script>
+		function openModal() {
+			document.getElementById("myModal").style.display = "block";
+		}
+
+		function closeModal() {
+			document.getElementById("myModal").style.display = "none";
+		}
+
+	
+		function currentSlide(n) {
+			var slideIndex = n;
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var captionText = document.getElementById("caption");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			slides[slideIndex - 1].style.display = "block";
+			captionText.innerHTML = slides[slideIndex - 1].alt;
+		}
+	</script>
 </body>
+
 </html>

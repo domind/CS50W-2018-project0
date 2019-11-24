@@ -1,6 +1,6 @@
 body{
 margin: 2%;
-background-color: khaki;
+background-color: white;
 }
 
 .row,.container, #main-section{
@@ -12,49 +12,58 @@ border-style: none;
 border-radius:20px;
 border-style: solid;
 border-width: 2px;
-border-color: seagreen;
-background-color: darkkhaki;
+border-color: lightseagreen;
+background-color: lightskyblue;
 margin: 2px;
 }
 .reactItem{
     margin: 5px;
-    background-color: olivedrab;
+    background-color: white;
 }
 .backtogit {
-background-color: darkkhaki;
+background-color: lightskyblue;
 display:flex; 
 font-weight: bold;
 align-items: center;
 text-align: center;
-border-color: black;
+border-color: lightseagreen;
 }
 .fbottom{
 text-align: center;
 font-weight: bold;
 }
 .backtogit:hover{
-background-color: darkolivegreen ;
+background-color: lightseagreen ;
 cursor: pointer;
 }
 
 #top {
 text-align: center;
-background-color:yellowgreen;
+background-color:lightskyblue;
 
 }
+
 a:link{
-  color: red;
+  color: blue;
 }
 a:hover{
-  color: maroon;
+  color: lightseagreen;
 }
 a:visited{
-  color: firebrick;
+  color: lightskyblue;
 }
+
 .fbottom a:link, .fbottom a:visited,.fbottom a:focus {
 /* color: YellowGreen ;*/
 }
-
+img{
+  border-radius:5px;
+  border: solid 1px lightseagreen;
+  margin: 5px;
+  width: 100%;
+  
+  padding: 1px;
+}
 
 #myImg {
     border-radius: 5px;
